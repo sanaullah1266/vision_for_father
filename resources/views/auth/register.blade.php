@@ -4,7 +4,7 @@
 <form class="card card-md" action="{{ route('register') }}" method="POST" autocomplete="off">
     @csrf
 
-    <div class="card-body">
+    <div class="card-body ">
         <h2 class="card-title text-center mb-4">Create new account</h2>
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>

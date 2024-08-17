@@ -3,9 +3,9 @@
 @section('content')
 <div class="card card-md">
     <div class="card-body">
-        <h2 class="h2 text-center mb-4">
+        <h1 class="h1 text-center mb-4">
             Login to your account
-        </h2>
+        </h1>
         <form action="{{ route('login') }}" method="POST" autocomplete="off">
             @csrf
             <div class="mb-3">
@@ -58,7 +58,7 @@
             </div>
 
             <div class="form-footer">
-                <button type="submit" class="btn btn-primary w-100">
+                <button type="submit" class="btn  w-100" style="background: #00008b ;color:white">
                     Sign in
                 </button>
             </div>

@@ -18,6 +18,7 @@ use App\Http\Controllers\Quotation\QuotationController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\UnitController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserDataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -124,6 +125,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/quotations/complete/{quotation}', [QuotationController::class, 'update'])->name('quotations.update');
     Route::delete('/quotations/delete/{quotation}', [QuotationController::class, 'destroy'])->name('quotations.delete');
 });
+
+// user data route are are here
+Route::get('/userdata' ,[UserDataController::class],"index")->name("userdata.index");
+
 
 require __DIR__.'/auth.php';
 
